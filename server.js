@@ -12,6 +12,7 @@ function delay(duration) {
 app.get("/", (req, res) => {
   // JSON.stringify({}) => "{}"
   // JSON.parse("{}") => {}
+  // [5,1,2,3,4].sort()
   res.send("Perfomance example");
 });
 
