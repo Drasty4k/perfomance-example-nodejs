@@ -22,6 +22,7 @@ app.get("/timer", (req, res) => {
   res.send(`Ding ding ding! ${process.pid}`);
 });
 
+console.log("Running server.js...");
 if (cluster.isMaster) {
   console.log("Master has been started...");
   cluster.fork();
